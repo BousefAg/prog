@@ -1,11 +1,13 @@
 
+using System.Diagnostics.Eventing.Reader;
+
 namespace UpAndDown
 {
     public partial class Form1 : Form
     {
 
         int score = 0;
-        int multiplier = 1;
+        int multiplier = 2;
         public Form1()
         {
             InitializeComponent();
@@ -18,7 +20,7 @@ namespace UpAndDown
         {
             if (e.KeyCode == Keys.Space)
             {
-                //1) pas de multiplier aan, zorg dat de multiplier de waarde krijgt van zichzelf * 2
+                score += 1;
             }
         }
 
@@ -34,8 +36,9 @@ namespace UpAndDown
 
         public void DoLogic(float frametime)
         {
-			//2) verander de code hieronder: zorg dat je de score verhoogt met 2 keer multiplier
-            score += 2;
-        }
+            if (multiplier == 2) ;
+         {
+                score += 4;
+         }
     }
 }

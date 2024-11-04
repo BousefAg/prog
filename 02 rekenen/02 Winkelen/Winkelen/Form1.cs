@@ -2,16 +2,11 @@ namespace Winkelen
 {
     public partial class Form1 : Form
     {
-        int sponge;
-        double spongePrice = 49.99;
-        int elden;
-        double eldenPrice = 79.99;
-        int spiderman;
-        double spidermanPrice = 60.99;
-        int ps5s;
-        double ps5Price = 499.99;
-        int controllers;
-        double controllerPrice = 69.99;
+        int spongePrice = 49.99;
+        int eldenPrice = 79.99;
+        int spidermanPrice = 60.99;
+        int ps5Price = 499.99;
+        int controllerPrice = 69.99;
         public Form1()
         {
             InitializeComponent();
@@ -20,8 +15,7 @@ namespace Winkelen
         private void calculateTotal_Click(object sender, EventArgs e)
         {
             //1) reken hier de totaal prijs uit
-            double total = 0;
-
+            double total = spongePrice + eldenPrice + spidermanPrice + ps5Price + controllerPrice;
             totalPrice.Text = total.ToString();
         }
 

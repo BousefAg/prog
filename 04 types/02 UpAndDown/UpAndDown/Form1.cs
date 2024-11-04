@@ -59,7 +59,7 @@ namespace UpAndDown
         {
 			//2) Zoek uit waarom de speler weer naar boven gaat, zet de reden hieronder achter de  //> neer
 			//>
-            player.y += 5;
+            player.y += 0;
         }
     }
 }
